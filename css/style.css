@@ -1,0 +1,383 @@
+*, *::before, *::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+font-family: 'Poppins';
+font-weight: 400;
+color: #fff;
+}
+
+/* ======================Шрифты====================== */
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v23-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v23-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
+
+
+.container{
+display: flex;
+}
+
+
+  body{
+    background: #050214;
+    width: 100%;
+    height: 100%;
+overflow: hidden;
+  }
+
+  .img__container{
+    height: 100%;
+    width: 60%;
+    border-radius:0 0 10%;
+  }
+
+
+  .img__container img{
+    width: 1152px;
+    height: 1920px;
+    z-index: -20;
+    object-position: 0 -10rem;
+    object-fit: contain;
+    transform: translateY(-7%);
+
+  }
+
+  .image__overlay{
+    background: #02091454;
+    width: 1152px;
+    height: 1920px;
+    z-index: -19;
+    transform: translateY(-125.3%);
+  }
+
+  .form__container{
+    width: 40%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+
+  }
+
+  .form__block{
+    width: 30rem;
+    height: 40rem;
+    margin-top: 9rem;
+    z-index: 10;
+    
+  }
+
+  .form__wrap{
+    /* тут контейнер с инпутами */
+  }
+
+  .go-to-signup{
+    color:#C10C99 ;
+    text-decoration: none;
+  }
+
+
+  .reg__subtitle{
+    font-weight: 400;
+    font-size: 15px;
+
+  }
+
+  .registration__title{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .form__titles{
+    margin-bottom: 3.5rem;
+  }
+
+  .input__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .label-text{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  input{
+    background:none;
+    border-bottom: 1px solid #fff;
+    margin-left: 1.5rem;
+  }
+
+  .checkbox-box{
+    width: 1;
+    height: 1px;
+    padding-left: 22px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+  }
+
+  .custom-checkbox{
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    z-index: 150;
+    position: absolute;
+  }
+
+  .checkbox-title{
+    margin-left: 30px;
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b9b9b9;
+  }
+
+  .custom-checkbox:checked{
+    border: 2px solid #C10C99;
+  }
+
+  .checkbox-box:checked + .custom-checkbox::before {
+    width: 8px;
+    height: 8px;
+    background-color: #C10C99;
+    position: absolute;
+    content: "";
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.checkbox-subtitle{
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b9b9b9;
+    cursor: pointer;
+}
+
+.checkbox__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.button{
+    width: 100%;
+    background: #C10C99;
+    height: 50px;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+}
+
+.button:hover{
+    background: #ff00c8;
+    box-shadow: 0 0 10px #c90aaf;
+}
+
+
+.after__form{
+    margin-left: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b9b9b9;
+    margin-top: 2rem;
+}
+
+.social___container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.social{
+    width: 40px;
+}
+
+.social:hover{
+    transform: scale(115%);
+}
+
+.logo__title{
+    transform: translateY(-7950%);
+margin-left: 40px;
+font-weight: 600;
+z-index: 140;
+
+}
+
+.pause{
+  position: absolute;
+z-index: 100;
+transform: translateY(500%) translateX(700%);
+cursor: pointer;
+}
+
+.letter{
+  width: 15px;
+  color: #fff;
+  position: absolute;
+  transform: translateY(260%)  ;
+  border-bottom: 1px solid #fff;
+}
+
+.lock{
+  width: 15px;
+  color: #fff;
+  position: absolute;
+  transform: translateY(230%);
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+.hidden-form {
+  display: none;
+}
+
+.logo__title-mobile{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+  .img__container{
+    display: none;
+  }
+
+  .pause{
+    display: none;
+  }
+
+  .form__container{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .form__block{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    transform: translateX(-5%);
+    margin-top: 7rem;
+  }
+
+  form{
+    margin: 0;
+  }
+
+  .logo__title{
+    display: block;
+  }
+
+  .logo__title-mobile{
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .container{
+    overflow: hidden;
+  }
+  .img__container img{
+    width: 120%;
+    transform: translateY(0%) translateX(-10%);
+    
+  }
+
+  .img__container{
+    width: 60%;
+  }
+
+  .image__overlay{
+    width: 935px;
+  }
+
+  .form__block{
+    width: 80%;
+  }
+    .pause{
+        position: absolute;
+        transform: translateX(550%) translateY(500%);
+    }
+  }
+
+  @media (max-width: 375px) {
+    .img__container{
+      display: none;
+    }
+  
+    .pause{
+      display: none;
+    }
+  
+    .form__container{
+      width: 100%;
+      height: 100%;
+      
+    }
+  
+    .form__block{
+      width: 80vw;
+      height: 100%;
+      margin-left: 0;
+      margin-top: 7rem;
+      transform: translateX(-40%);
+    }
+  
+    form{
+      margin: 0;
+    }
+  
+    .logo__title{
+      display: block;
+    }
+  
+    .logo__title-mobile{
+      display: block;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      font-size: 18px;
+    }
+  }
