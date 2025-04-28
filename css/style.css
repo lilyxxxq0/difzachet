@@ -64,7 +64,6 @@ overflow: hidden;
     z-index: -20;
     object-position: 0 -10rem;
     object-fit: contain;
-    transform: translateY(-7%);
 
   }
 
